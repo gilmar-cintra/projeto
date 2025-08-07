@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon Products Search</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+</head>
+<body>
+  <div class="container py-5">
+    <h1 class="text-center mb-4">Amazon Products Search</h1>
+    
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-8">
+        <div class="input-group">
+          <input type="text" id="keyword" class="form-control" placeholder="Type a keyword...">
+          <button class="btn btn-primary" onclick="search()">
+            <i class="bi bi-search"></i> Search
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <div id="loading" class="text-center my-4" style="display: none;">
+  <div class="spinner-border text-primary" role="status">
+    <span class="visually-hidden">Loading ...</span>
+  </div>
+  <p class="mt-2">Search Products...</p>
+</div>
+    <div id="result" class="mt-4"></div>
+  </div>
+
+  <!-- Bootstrap 5 JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Seu script -->
+  <script src="/src/ajax.js"></script>
+</body>
+</html>
